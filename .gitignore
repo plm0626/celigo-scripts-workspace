@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+.env
+
+setup_woo_export_for_ns_sales_order/.git
