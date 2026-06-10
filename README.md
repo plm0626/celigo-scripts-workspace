@@ -5,6 +5,8 @@ A lightweight JavaScript workspace for independent script files, organized for U
 ## Project Structure
 
 - `src/` — independent JavaScript scripts, each self-contained and unrelated to the others.
+- `scripts/` — lightweight workspace helper commands.
+- `setup_woo_export_for_ns_sales_order/` — tracked WooCommerce-to-NetSuite setup subproject.
 - `README.md` — workspace overview and usage guidance.
 - `UAI_DOCUMENTATION.md` — UAI documentation conventions and workspace rules.
 - `.gitignore` — standard ignore patterns.
@@ -16,11 +18,16 @@ A lightweight JavaScript workspace for independent script files, organized for U
 2. Keep each file self-contained and unrelated when appropriate.
 3. Document the purpose and usage in the header comment of each script.
 4. Run a script with `node src/<script-name>.js`.
+5. Run subproject scripts from their own directory when a script has subproject-specific context.
 
 ## Example Commands
 
 - `npm run start` — runs `src/example-script.js`
-- `npm run list` — placeholder list command for workspace scripts
+- `npm run list` — lists JavaScript files under workspace `src/` folders
+
+## Subprojects
+
+The `setup_woo_export_for_ns_sales_order/` directory is also a standalone Git repository and is registered from the root workspace as a submodule-style gitlink. Make code and documentation changes inside the subproject repo, then update the root workspace pointer when the subproject commit changes.
 
 ## UAI Documentation
 

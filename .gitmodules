@@ -1,0 +1,3 @@
+[submodule "setup_woo_export_for_ns_sales_order"]
+	path = setup_woo_export_for_ns_sales_order
+	url = https://github.com/plm0626/setup-woo-export-for-ns-sales-order.git
